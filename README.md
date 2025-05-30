@@ -66,10 +66,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🙏 Acknowledgments
 
-- [Tempo](https://www.tempo.new/) for building an amazing product
-- All contributors who have helped improve this project
-- The open source community for endless inspiration
+- [Tempo](https://www.tempo.new/)
+- [Chrome](https://www.google.com/chrome/)
+- [Mozilla](https://www.mozilla.org/firefox/)
 
 ---
 
-Built with ♥ by [RMNCLDYO](https://github.com/rmncldyo).
+Built with ♥ by [RMNCLDYO](https://rmncldyo.com/).
