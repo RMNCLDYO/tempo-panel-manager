@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0F1014;
+            color: #ffffff;
+            width: 320px;
+            height: 320px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(124, 58, 237, 0.1), transparent 60%),
+                radial-gradient(circle at bottom left, rgba(124, 58, 237, 0.05), transparent 40%);
+            z-index: 0;
+            border-radius: 12px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            width: 52px;
+            height: 52px;
+            background-color: #7c3aed;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.4);
+            flex-shrink: 0;
+        }
+
+        .logo svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 52px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+            color: #ffffff;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            line-height: 1.2;
+        }
+
+        .version {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 3px;
+            letter-spacing: -0.1px;
+            line-height: 1.3;
+        }
+
+        .content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 14px 16px;
+            margin: 8px 0;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+            background: #2A2A36;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button svg {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            opacity: 0.9;
+        }
+
+        button:hover {
+            background: #34343F;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transform: translateX(-100%);
+        }
+
+        button:hover::after {
+            transform: translateX(100%);
+            transition: transform 0.6s ease;
+        }
+
+        .footer {
+            padding: 14px 20px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .help-icon {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+
+        .help-icon:hover {
+            opacity: 1;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: 60px;
+            right: 20px;
+            width: 250px;
+            background: #2A2A36;
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px 12px;
+            font-size: 12px;
+            line-height: 1.4;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: none;
+            text-align: left;
+        }
+
+        .tooltip-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #9d6aff;
+        }
+
+        .heart {
+            color: #ff3366;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+            margin: 0 2px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #9d6aff;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-bg"></div>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H20L18.4761 2.03571H1.52403L0 0Z" fill="white"></path>
+                    <path d="M2.03218 2.71429H8.10379V4.41072L3.30228 4.41071L2.03218 2.71429Z" fill="white"></path>
+                    <path d="M11.7314 2.71429H17.9681L16.6981 4.41072H11.7314V2.71429Z" fill="white"></path>
+                    <path
+                        d="M11.0219 0.246498L11.0059 17.6429L9.9176 19L8.82931 17.6429L8.84534 0.237502L11.0219 0.246498Z"
+                        fill="white"></path>
+                    <path d="M13.5382 2.71429V14.9286L11.7314 16.9643V2.71429H13.5382Z" fill="white"></path>
+                    <path d="M8.10379 2.71429V16.9643L6.28997 14.9286L6.29897 2.71429H8.10379Z" fill="white"></path>
+                </svg>
+            </div>
+            <div class="title-container">
+                <h1 class="title">Tempo Panel Manager <span class="version">v1.0.0</span></h1>
+                <div class="subtitle">Split your Tempo workspace into separate windows</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <button id="chat-panel">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Open Chat Panel
+            </button>
+            <button id="canvas-panel">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                Open Canvas Panel
+            </button>
+        </div>
+
+        <div class="footer">
+            <div>
+                Built with <span class="heart">♥</span> by <a href="https://github.com/rmncldyo"
+                    target="_blank">RMNCLDYO</a>
+            </div>
+            <div class="help-icon" id="helpIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+            </div>
+            <div class="tooltip" id="helpTooltip">
+                <div class="tooltip-title">Troubleshooting Tips</div>
+                <p>If panels don't open correctly:</p>
+                <ul style="padding-left: 15px; margin: 5px 0;">
+                    <li>Check if popups are blocked for app.tempo.new in Chrome settings</li>
+                    <li>Try refreshing the Tempo canvas page</li>
+                    <li>Make sure you're on a valid Tempo canvas URL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
