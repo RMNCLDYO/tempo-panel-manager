@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+    "name": "Tempo Panel Manager",
+    "short_name": "TPM",
+    "version": "1.0.0",
+    "description": "Split your Tempo workspace into separate windows. Enhance your productivity by opening chat or canvas panels in dedicated windows.",
+    "author": "RMNCLDYO",
+    "homepage_url": "https://github.com/rmncldyo",
+    "icons": {
+        "16": "icon_16.png",
+        "32": "icon_32.png",
+        "48": "icon_48.png",
+        "64": "icon_64.png",
+        "96": "icon_96.png",
+        "128": "icon_128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Tempo Panel Manager",
+        "default_icon": {
+            "16": "icon_16.png",
+            "32": "icon_32.png",
+            "48": "icon_48.png",
+            "64": "icon_64.png",
+            "96": "icon_96.png",
+            "128": "icon_128.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting",
+        "https://app.tempo.new/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://app.tempo.new/canvases/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
