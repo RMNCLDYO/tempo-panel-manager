@@ -1,18 +1,18 @@
 # Tempo Panel Manager
 
-A lightweight browser extension that enhances your [Tempo](https://www.tempo.new/) workflow by letting you pop out chat or canvas panels into separate (focused) windows.
+A lightweight browser extension that enhances your [Tempo](https://www.tempo.new/) workflow by creating distraction-free windows for chat and canvas panels, perfect for use alongside your favorite code editors.
 
 ## ✨ Features
 
-- **Chat Panel Popout** - Keep just the chat visible in a compact window
-- **Canvas Panel Popout** - Focus on your canvas without distractions
+- **Distraction-Free Chat Panel** - Keep just the chat visible in a clean, focused window
+- **Distraction-Free Canvas Panel** - Work on your canvas without any browser UI elements
 - **Lightweight** - Minimal impact on system resources
 - **Cross-Platform** - Works with Chromium-based and Mozilla-based browsers
 - **One-Click Access** - Simple toolbar integration
 
 ## 🎯 Why I Built This
 
-I created this extension to enhance my workflow with [@TempoLabsAI](https://github.com/TempoLabsAI) across different development environments. By having Tempo's interface in separate, dedicated windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
+I created this extension to enhance my workflow with [@TempoLabsAI](https://github.com/TempoLabsAI) across different development environments. By having Tempo's interface in separate, distraction-free windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
 
 ## 🚀 Quick Start
 
@@ -29,15 +29,15 @@ I created this extension to enhance my workflow with [@TempoLabsAI](https://gith
 
 ### Chat Panel
 Perfect for when you want to:
-- Keep the AI chat visible while coding
-- Reference conversations without switching windows
+- Keep the AI chat visible while coding in a distraction-free window
+- Reference conversations without browser UI elements
 - Maintain a clean, focused workspace
 
 ### Canvas Panel
 Ideal for when you need to:
-- Focus solely on your canvas
+- Focus solely on your canvas without browser distractions
 - Maximize screen real estate
-- Minimize distractions while working
+- Create a distraction-free environment for deep work
 
 ## 🌐 Browser Support
 
