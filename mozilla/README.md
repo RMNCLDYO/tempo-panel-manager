@@ -1,19 +1,17 @@
-# Tempo Panel Manager for Firefox
+# Tempo Panel Manager for Mozilla Browsers
 
-![Tempo Logo](icon_128.png)
+Mozilla-based browser implementation of the Tempo Panel Manager extension. Compatible with Firefox, Zen, LibreWolf, Floorp, and other Mozilla-based browsers.
 
-Firefox-specific implementation of the Tempo Panel Manager extension.
-
-## Firefox Installation Instructions
+## Installation Instructions
 
 ### Manual Installation (Temporary Add-on)
 1. Download or clone this repository
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+2. Open your Mozilla-based browser and navigate to `about:debugging#/runtime/this-firefox`
 3. Click "Load Temporary Add-on..."
 4. Select any file in the `mozilla` folder from this repository
 5. Verify the extension appears in your toolbar
 
-Note: Temporarily loaded add-ons will be removed when Firefox is restarted.
+Note: Temporarily loaded add-ons will be removed when the browser is restarted.
 
 ### Creating a Signed XPI (For Developers)
 To create a persistent installation:
@@ -33,7 +31,7 @@ To create a persistent installation:
 ## Usage
 
 1. Navigate to a Tempo canvas page (e.g., `https://app.tempo.new/canvases/...`)
-2. Click the Tempo icon in your Firefox toolbar
+2. Click the Tempo icon in your browser's toolbar
 3. Select the desired panel to open in a separate window
 
 ## Troubleshooting
