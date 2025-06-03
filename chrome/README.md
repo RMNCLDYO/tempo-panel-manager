@@ -1,12 +1,10 @@
-# Tempo Panel Manager for Chrome
+# Tempo Panel Manager for Chromium Browsers
 
-![Tempo Logo](icon_128.png)
-
-Chrome-specific implementation of the Tempo Panel Manager extension.
+Chromium-based browser implementation of the Tempo Panel Manager extension. Compatible with Chrome, Edge, Brave, Vivaldi, and other Chromium-based browsers.
 
 ### Manual Installation (Developer Mode)
 1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
+2. Open your Chromium-based browser and navigate to `chrome://extensions/`
 3. Enable "Developer mode" using the toggle in the top-right corner
 4. Click "Load unpacked"
 5. Select the `chrome` folder from this repository
@@ -22,7 +20,7 @@ Chrome-specific implementation of the Tempo Panel Manager extension.
 ## Usage
 
 1. Navigate to a Tempo canvas page (e.g., `https://app.tempo.new/canvases/...`)
-2. Click the Tempo icon in your Chrome toolbar
+2. Click the Tempo icon in your browser's toolbar
 3. Select the desired panel to open in a separate window
 
 ## Troubleshooting
