@@ -23,6 +23,10 @@ Chromium-based browser implementation of the Tempo Panel Manager extension. Comp
 2. Click the Tempo icon in your browser's toolbar
 3. Select the desired panel to open in a separate window
 
+## Why I Built This
+
+I created this extension to enhance my workflow with Tempo across different development environments. By having Tempo's interface in separate, dedicated windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
+
 ## Troubleshooting
 
 ### Popup Blockers
