@@ -43,8 +43,8 @@ Ideal for when you need to:
 
 | Browser Family | Status | Install |
 |---------|--------|---------|
-| Chromium-based browsers<br><small>*(Chrome, Brave, Vivaldi, Arc, etc...)*</small> | ✅ Fully Supported | [Install](./chrome/README.md) |
-| Mozilla-based browsers<br><small>*(Firefox, Zen, LibreWolf, Floorp, etc...)*</small> | ✅ Fully Supported | [Install](./mozilla/README.md) |
+| Chromium-based browsers<br><small>*(Chrome, Brave, Vivaldi, Arc, etc...)*</small> | ✅ Fully Supported | [Installation Instructions](./chrome/README.md) |
+| Mozilla-based browsers<br><small>*(Firefox, Zen, LibreWolf, Floorp, etc...)*</small> | ✅ Fully Supported | [Installation Instructions](./mozilla/README.md) |
 
 ## 🤝 Contributing
 
