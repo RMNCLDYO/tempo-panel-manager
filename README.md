@@ -12,7 +12,7 @@ A lightweight browser extension that enhances your [Tempo](https://www.tempo.new
 
 ## 🎯 Why I Built This
 
-As someone who uses Tempo's Local Mode daily with VSCode, I often found myself wanting to keep either just the chat or just the canvas visible. This simple extension was my solution to that workflow challenge, and I'm sharing it in case others find it useful too!
+I created this extension to enhance my workflow with Tempo across different development environments. By having Tempo's interface in separate, dedicated windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
 
 ## 🚀 Quick Start
 
