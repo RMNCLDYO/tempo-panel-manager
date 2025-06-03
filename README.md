@@ -17,7 +17,8 @@ As someone who uses Tempo's Local Mode daily with VSCode, I often found myself w
 ## 🚀 Quick Start
 
 1. **Install the extension**
-   - [Chromium-based browsers](./chrome/README.md) | [Mozilla-based browsers](./mozilla/README.md)
+   - [Chromium-based browser instructions](./chrome/README.md)
+   - [Mozilla-based browser instructions](./mozilla/README.md)
 2. Navigate to a Tempo canvas
 3. Click the Tempo icon in your toolbar
 4. Select "Open Chat Panel" or "Open Canvas Panel"
@@ -42,8 +43,8 @@ Ideal for when you need to:
 
 | Browser Family | Status | Install |
 |---------|--------|---------|
-| Chromium-based browsers<br><small>(Chrome, Brave, Vivaldi, Arc, etc.)</small> | ✅ Fully Supported | [Install](./chrome/README.md) |
-| Mozilla-based browsers<br><small>(Firefox, Zen, LibreWolf, Floorp, etc.)</small> | ✅ Fully Supported | [Install](./mozilla/README.md) |
+| Chromium-based browsers<br><small>*(Chrome, Brave, Vivaldi, Arc, etc...)*</small> | ✅ Fully Supported | [Install](./chrome/README.md) |
+| Mozilla-based browsers<br><small>*(Firefox, Zen, LibreWolf, Floorp, etc...)*</small> | ✅ Fully Supported | [Install](./mozilla/README.md) |
 
 ## 🤝 Contributing
 
@@ -66,7 +67,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 🙏 Acknowledgments
 
 - [Tempo](https://www.tempo.new/)
-- [Chromium Project](https://www.chromium.org/)
+- [Chromium](https://www.chromium.org/)
 - [Mozilla](https://www.mozilla.org/)
 
 ---
