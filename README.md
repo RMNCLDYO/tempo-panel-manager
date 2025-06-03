@@ -1,5 +1,4 @@
-
-# Tempo Panel Manager <span style="font-size: 15px; color: #666;">v1.0.0</span>
+# Tempo Panel Manager
 
 A lightweight browser extension that enhances your [Tempo](https://www.tempo.new/) workflow by letting you pop out chat or canvas panels into separate (focused) windows.
 
@@ -8,7 +7,7 @@ A lightweight browser extension that enhances your [Tempo](https://www.tempo.new
 - **Chat Panel Popout** - Keep just the chat visible in a compact window
 - **Canvas Panel Popout** - Focus on your canvas without distractions
 - **Lightweight** - Minimal impact on system resources
-- **Cross-Platform** - Works with Chrome and Firefox
+- **Cross-Platform** - Works with Chromium-based and Mozilla-based browsers
 - **One-Click Access** - Simple toolbar integration
 
 ## 🎯 Why I Built This
@@ -18,7 +17,7 @@ As someone who uses Tempo's Local Mode daily with VSCode, I often found myself w
 ## 🚀 Quick Start
 
 1. **Install the extension**
-   - [Chrome](./chrome/README.md) | [Firefox](./mozilla/README.md)
+   - [Chromium-based browsers](./chrome/README.md) | [Mozilla-based browsers](./mozilla/README.md)
 2. Navigate to a Tempo canvas
 3. Click the Tempo icon in your toolbar
 4. Select "Open Chat Panel" or "Open Canvas Panel"
@@ -41,10 +40,10 @@ Ideal for when you need to:
 
 ## 🌐 Browser Support
 
-| Browser | Status | Install |
+| Browser Family | Status | Install |
 |---------|--------|---------|
-| Chrome | ✅ Fully Supported | [Install](./chrome/README.md) |
-| Firefox | ✅ Fully Supported | [Install](./mozilla/README.md) |
+| Chromium-based browsers<br><small>(Chrome, Brave, Vivaldi, Arc, etc.)</small> | ✅ Fully Supported | [Install](./chrome/README.md) |
+| Mozilla-based browsers<br><small>(Firefox, Zen, LibreWolf, Floorp, etc.)</small> | ✅ Fully Supported | [Install](./mozilla/README.md) |
 
 ## 🤝 Contributing
 
@@ -67,8 +66,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 🙏 Acknowledgments
 
 - [Tempo](https://www.tempo.new/)
-- [Chrome](https://www.google.com/chrome/)
-- [Mozilla](https://www.mozilla.org/firefox/)
+- [Chromium Project](https://www.chromium.org/)
+- [Mozilla](https://www.mozilla.org/)
 
 ---
 
