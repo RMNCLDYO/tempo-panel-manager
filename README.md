@@ -12,7 +12,7 @@ A lightweight browser extension that enhances your [Tempo](https://www.tempo.new
 
 ## 🎯 Why I Built This
 
-I created this extension to enhance my workflow with Tempo across different development environments. By having Tempo's interface in separate, dedicated windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
+I created this extension to enhance my workflow with @TempoLabsAI across different development environments. By having Tempo's interface in separate, dedicated windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
 
 ## 🚀 Quick Start
 
