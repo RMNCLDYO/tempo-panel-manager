@@ -1,6 +1,6 @@
 # Tempo Panel Manager for Chromium Browsers
 
-Chromium-based browser implementation of the Tempo Panel Manager extension. Compatible with Chrome, Edge, Brave, Vivaldi, and other Chromium-based browsers.
+Chromium-based browser implementation of the Tempo Panel Manager extension. Compatible with Chrome, Brave, Vivaldi, Arc, Dia, and other Chromium-based browsers.
 
 ### Manual Installation (Developer Mode)
 1. Download or clone this repository
