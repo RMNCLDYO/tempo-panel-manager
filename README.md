@@ -1,75 +1,22 @@
 # Tempo Panel Manager
 
-A lightweight browser extension that enhances your [Tempo](https://www.tempo.new/) workflow by creating distraction-free windows for chat and canvas panels, perfect for use alongside your favorite code editors.
+I used to run [Tempo](https://www.tempo.new/) alongside Cursor, VSCode, and Windsurf. A full browser tab ate screen space and tab-switching killed flow. I wanted Tempo's chat and canvas panels in their own distraction-free windows with no browser UI. So I built this.
 
-## ✨ Features
+Browser extension for Chromium and Mozilla browsers that pops Tempo's chat and canvas panels into clean standalone windows.
 
-- **Distraction-Free Chat Panel** - Keep just the chat visible in a clean, focused window
-- **Distraction-Free Canvas Panel** - Work on your canvas without any browser UI elements
-- **Lightweight** - Minimal impact on system resources
-- **Cross-Platform** - Works with Chromium-based and Mozilla-based browsers
-- **One-Click Access** - Simple toolbar integration
+## Install
 
-## 🎯 Why I Built This
+- [Chromium-based browsers](./chrome/README.md) (Chrome, Edge, Brave, Arc, Dia, Vivaldi, Opera, Helium)
+- [Mozilla-based browsers](./mozilla/README.md) (Firefox, Zen, LibreWolf, Floorp)
 
-I created this extension to enhance my workflow with [@TempoLabsAI](https://github.com/TempoLabsAI) across different development environments. By having Tempo's interface in separate, distraction-free windows, I found I could work more efficiently in any IDE - whether I'm using Cursor, VSCode, Windsurf, or any other tool. It's a small change that makes a big difference in how I organize my workspace and interact with Tempo while coding.
+## Usage
 
-## 🚀 Quick Start
+1. Open a Tempo canvas at [app.tempo.new](https://app.tempo.new)
+2. Click the extension icon in your browser toolbar
+3. Pick "Open Chat Panel" or "Open Canvas Panel"
 
-1. **Install the extension**
-   - [Chromium-based browser instructions](./chrome/README.md)
-   - [Mozilla-based browser instructions](./mozilla/README.md)
-2. Navigate to a Tempo canvas
-3. Click the Tempo icon in your toolbar
-4. Select "Open Chat Panel" or "Open Canvas Panel"
+You may need to allow popups for `app.tempo.new` in your browser settings.
 
-> 💡 **Tip:** You may need to allow popups for `app.tempo.new` in your browser settings.
+## License
 
-## 🛠️ Usage
-
-### Chat Panel
-Perfect for when you want to:
-- Keep the AI chat visible while coding in a distraction-free window
-- Reference conversations without browser UI elements
-- Maintain a clean, focused workspace
-
-### Canvas Panel
-Ideal for when you need to:
-- Focus solely on your canvas without browser distractions
-- Maximize screen real estate
-- Create a distraction-free environment for deep work
-
-## 🌐 Browser Support
-
-| Browser Family | Status | Install |
-|---------|--------|---------|
-| Chromium-based browsers<br><small>*(Chrome, Brave, Vivaldi, Arc, etc...)*</small> | ✅ Fully Supported | [Installation Instructions](./chrome/README.md) |
-| Mozilla-based browsers<br><small>*(Firefox, Zen, LibreWolf, Floorp, etc...)*</small> | ✅ Fully Supported | [Installation Instructions](./mozilla/README.md) |
-
-## 🤝 Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Issues
-
-Please open an issue if you find any bugs or have suggestions for improvement [here](https://github.com/ramonclaudio/tempo-panel-manager/issues).
-
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## 🙏 Acknowledgments
-
-- [Tempo](https://www.tempo.new/)
-- [Chromium](https://www.chromium.org/)
-- [Mozilla](https://www.mozilla.org/)
-
----
-
-Built with ♥ by [Ramon Claudio](https://ramonclaudio.com/).
+MIT
