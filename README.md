@@ -58,7 +58,7 @@ Contributions are what make the open source community such an amazing place to l
 
 ## Issues
 
-Please open an issue if you find any bugs or have suggestions for improvement [here](https://github.com/rmncldyo/tempo-panel-manager/issues).
+Please open an issue if you find any bugs or have suggestions for improvement [here](https://github.com/ramonclaudio/tempo-panel-manager/issues).
 
 ## 📝 License
 
@@ -72,4 +72,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-Built with ♥ by [RMNCLDYO](https://rmncldyo.com/).
+Built with ♥ by [Ramon Claudio](https://ramonclaudio.com/).

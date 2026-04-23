@@ -52,4 +52,4 @@ If you want to modify this extension while it's temporarily loaded:
 
 ## Credits
 
-Built with ♥ by [RMNCLDYO](https://github.com/rmncldyo).
+Built with ♥ by [Ramon Claudio](https://github.com/ramonclaudio).

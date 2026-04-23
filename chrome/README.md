@@ -41,4 +41,4 @@ If you want to modify this extension:
 
 ## Credits
 
-Built with ♥ by [RMNCLDYO](https://github.com/rmncldyo).
+Built with ♥ by [Ramon Claudio](https://github.com/ramonclaudio).
